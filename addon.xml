@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?> 
+<addon id="plugin.video.persiantvs" name="Persian TVs" version="1.0.0" provider-name="AAM">
+    <requires>
+<!--         <import addon="xbmc.python" version="3.0.0" />-->
+        <import addon="xbmc.python" version="2.25.0"/>
+        <import addon="script.module.beautifulsoup4" />
+        <import addon="script.module.requests" />
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="main.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en_GB">Kodi addon for the Persian TV channels</summary>
+        <description lang="en_GB"></description>
+        <language></language>
+        <platform>all</platform>
+        <license>AGPL-3.0</license>
+        <forum></forum>
+        <website></website>
+        <email>aam137@yahoo.com</email>
+        <source></source>
+        <news></news>
+        <disclaimer></disclaimer>
+        <assets>
+            <icon>resources/irantv.png</icon>
+            <fanart>resources/fanart.jpg</fanart>
+            <screenshot>resources/tv3.png</screenshot>
+            <screenshot>resources/bbcpersian.png</screenshot>
+            <screenshot>resources/manoto.png</screenshot>
+        </assets>
+        <news>Updated with latest artwork metadata</news>
+    </extension>
+</addon>
