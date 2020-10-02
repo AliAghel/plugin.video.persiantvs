@@ -129,17 +129,17 @@ def create_telewebion_object():
 
 
 def telewebion():
-    if is_object_exists(TELEWEBION_PATH):
-        telewebion = load_existing_object(TELEWEBION_PATH)
-        try:
-            return telewebion
-        except (ValueError, KeyError):
-            logger.exception('Loaded TELEWEBION object does not work!')
+    # if is_object_exists(TELEWEBION_PATH):
+    #     telewebion = load_existing_object(TELEWEBION_PATH)
+    #     try:
+    #         return telewebion
+    #     except (ValueError, KeyError):
+    #         logger.exception('Loaded TELEWEBION object does not work!')
 
     # Create new object
     telewebion = create_telewebion_object()
     # Save new model
-    save_object(telewebion, TELEWEBION_PATH)
+    # save_object(telewebion, TELEWEBION_PATH)
     return telewebion
 
 

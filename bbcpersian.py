@@ -43,18 +43,22 @@ def create_bbcpersian_object():
 
 
 def bbcpersian():
-    if is_object_exists(BBCPERSIAN_PATH):
-        try:
-            logger.info('BBC PERSIAN object loaded successfully!')
-            bbcpersian = load_existing_object(BBCPERSIAN_PATH)
-            return bbcpersian
-        except (ValueError, KeyError):
-            logger.exception('Loaded BBC PERSIAN object does not work!')
-            # Create new object
-            bbcpersian = create_bbcpersian_object()
-            # Save new model
-            save_object(bbcpersian, BBCPERSIAN_PATH)
-            return bbcpersian
+    # if is_object_exists(BBCPERSIAN_PATH):
+    #     try:
+    #         logger.info('BBC PERSIAN object loaded successfully!')
+    #         bbcpersian = load_existing_object(BBCPERSIAN_PATH)
+    #         return bbcpersian
+    #     except (ValueError, KeyError):
+    #         logger.exception('Loaded BBC PERSIAN object does not work!')
+    #         # Create new object
+    #         bbcpersian = create_bbcpersian_object()
+    #         # Save new model
+    #         save_object(bbcpersian, BBCPERSIAN_PATH)
+    #         return bbcpersian
+    bbcpersian = create_bbcpersian_object()
+    # Save new model
+    # save_object(bbcpersian, BBCPERSIAN_PATH)
+    return bbcpersian
 
 
 print(bbcpersian())

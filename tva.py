@@ -97,17 +97,17 @@ def create_tva_object():
 
 
 def tva():
-    if is_object_exists(TVA_PATH):
-        tva = load_existing_object(TVA_PATH)
-        try:
-            return tva
-        except (ValueError, KeyError):
-            logger.exception('Loaded TVA object does not work!')
+    # if is_object_exists(TVA_PATH):
+    #     tva = load_existing_object(TVA_PATH)
+    #     try:
+    #         return tva
+    #     except (ValueError, KeyError):
+    #         logger.exception('Loaded TVA object does not work!')
 
     # Create new object
     tva = create_tva_object()
     # Save new model
-    save_object(tva, TVA_PATH)
+    # save_object(tva, TVA_PATH)
     return tva
 
 
